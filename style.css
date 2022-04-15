@@ -385,9 +385,9 @@ slider-container {
     content: '';
       position: absolute;
       top: -10px;
-      left: 54.2%;
+      left: 56.5%;
       height: 10px;
-      width: 18.3%;
+      width: 17.4%;
      border-radius: 5px 5px 0 0;
       -moz-border-radius: 5px 5px 0 0;
      
@@ -396,10 +396,10 @@ slider-container {
 td.bot-td::after{
   content: '';
     position: absolute;
-    top: 370px;
-    left: 54.2%;
+    top: 320px;
+    left: 56.5%;
     height: 40px;
-    width: 18.3%;
+    width: 17.4%;
     border-radius:0 0 5px 5px ;
     -moz-border-radius: 5px 5px 0 0;
    

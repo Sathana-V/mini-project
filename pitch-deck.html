@@ -49,6 +49,32 @@
     body{
       overflow-x: hidden;
     }
+    @media only screen and (min-width: 1200px) {
+  td.colored.top-td2::before{
+    content: '';
+      position: absolute;
+      top: -10px;
+      left: 54.2%;
+      height: 10px;
+      width: 18.3%;
+     border-radius: 5px 5px 0 0;
+      -moz-border-radius: 5px 5px 0 0;
+     
+      background-color:#fa5255;
+  }
+td.bot-td2::after{
+  content: '';
+    position: absolute;
+    top: 370px;
+    left: 54.2%;
+    height: 40px;
+    width: 18.3%;
+    border-radius:0 0 5px 5px ;
+    -moz-border-radius: 5px 5px 0 0;
+   
+    background-color:#fa5255;
+}
+}
   </style>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
@@ -533,7 +559,7 @@
                 <table class="table table-borderless">
                   <tr class="border-bottom:grey">
                     <td></td>
-                    <td class="colored top-td"  style="background: #fa5255;color:white">PitchGuru</td>
+                    <td class="colored top-td2"  style="background: #fa5255;color:white">PitchGuru</td>
                     <td class="colored" >Classic agencies</td>
                     </tr>
                     <tr>
@@ -584,7 +610,7 @@
                       <td>
                         Easy ordering process
                       </td>
-                      <td class="bot-td"  style="background: #fa5255;color:white">
+                      <td class="bot-td2"  style="background: #fa5255;color:white">
                         <i class="fa fa-check"></i>
                       </td>
                       <td>
