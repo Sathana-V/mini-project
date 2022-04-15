@@ -342,12 +342,17 @@ h1.happytext{
 .list-unstyled li a:hover{
   text-decoration: none;
 }
+
 @media only screen and (max-width: 600px) {
   .card.d-flex.justify-content-center {
   
     width: 100%;
     margin-left: 0%;
     margin-top: 3%;
+}
+.pitch-head{
+  font-size: 30px;
+  text-align: center;
 }
 }
 @media only screen and (max-width: 1280px) {
