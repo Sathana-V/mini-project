@@ -35,7 +35,7 @@
              <div class="row">
 
                  <div class="row-wrapper">
-                    <a class="row-configure is" onclick="addBriefClass()" href="#" id="brief_tab1" data-id="1">
+                    <a class="row-configure is-active" onclick="addBriefClass()" href="#" id="brief_tab1" data-id="1">
                         <div><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></span></div>
                         <div>
                           <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Briefing</font></font></p>
@@ -61,111 +61,38 @@
                 <textarea class="briefing-input" name="text" placeholder="Example: We are a tech start-up from the B2B sector.  Just two hard requirements: the design of the slides should be bright and the hexagon from our logo should appear regularly.  No comic style, please, but modern and serious, appropriate to our industry.  We would like to convey that we are technically up to date."></textarea>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4 col-xs-12">
-              <p class="font-weight-bold">Bonnet</p>
-              <div data-toggle="buttons">
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="oil" checked autocomplete="off"> Oil
-                </label>
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="coolant" checked autocomplete="off"> Coolant
-                </label>
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="breakfluid" checked autocomplete="off"> Break Fluid
-                </label>
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="screenwash" checked autocomplete="off"> Screen Wash
-                </label>
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="leaks" checked autocomplete="off"> No Leaks
-                </label>
-              </div>
+        <div class="row brief-buttons">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button   style="margin-top:4%;margin-left: 4%;" class="button1 order-button">f   riendly</button>
+                
+                      <input type="checkbox" checked> Active
+                    
+                      <input type="checkbox" > Check
+                  
+                  </div>
             </div>
-            <div class="col-sm-4 col-xs-12">
-              <p class="font-weight-bold">Outside</p>
-              <div data-toggle="buttons">
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="tyres" checked autocomplete="off"> Tyres
-                </label>
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="wiperblades" checked autocomplete="off"> Wiper Blades
-                </label>
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="lights" checked autocomplete="off"> Lights
-                </label>
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="indicators" checked autocomplete="off"> Indicators
-                </label>
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="cleanliness" checked autocomplete="off"> Cleanliness
-                </label>
-              </div>
-            </div>
-            
-            <div class="col-sm-4 col-xs-12">
-              <p class="font-weight-bold">Inside</p>
-              <div data-toggle="buttons">
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="horn" checked autocomplete="off"> Horn
-                </label>
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="breaks" checked autocomplete="off"> Breaks/Handbrake
-                </label>
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="seatbelt" checked autocomplete="off"> Seatbelt
-                </label>
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="windscreen" checked autocomplete="off"> Windscreen
-                </label>
-                <label class="btn btn-block btn-black">
-                  <input type="checkbox" name="cleanliness" checked autocomplete="off"> Cleanliness
-                </label>
-              </div>
-            </div>
-            <div class="col-sm-12 text-right">
-              <button class="btn btn-lg" type="submit">Submit</button>
-              <div id="formValues"></div>
-            </div>
-            
-          </div>
+        </div>
        </div>
     </div>
      
       <footer-component></footer-component>
           <!-- Optional JavaScript; choose one of the two! -->
 <script>
-    $('[data-toggle="buttons"] .btn').on('click', function () {
-    // toggle style
-    $(this).toggleClass('btn-black btn-danger');
-    
-    // toggle checkbox
-    var $chk = $(this).find('[type=checkbox]');
-    $chk.prop('checked',!$chk.prop('checked'));
-    
-    return false;
-});
-
-$('form').on('submit',function(e){
-    // watch form values
-    $('#formValues').html(($('form').serialize()));
-    e.preventDefault();
-});
     function addBriefClass(){
         var s1='brief_tab1'
         var s2='brief_tab2'
         var element = document.getElementById(s1);
-        element.classList.add("is");
+        element.classList.add("is-active");
         var element = document.getElementById(s2);
-         element.classList.remove("is");
+         element.classList.remove("is-active");
     }
     function addPayClass(){
         var s2='brief_tab1'
         var s1='brief_tab2'
         var element = document.getElementById(s1);
-        element.classList.add("is");
+        element.classList.add("is-active");
         var element = document.getElementById(s2);
-        element.classList.remove("is");
+        element.classList.remove("is-active");
     }
 </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
