@@ -37,7 +37,7 @@ class Header extends HTMLElement {
             <a class="nav-link" href="enterprise.html">Enterprise</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link" href="/templates.html">Templates</a>
+          <a class="nav-link" href="templates.html">Templates</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
