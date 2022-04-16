@@ -61,11 +61,44 @@
                 <p>Give a brief overview of your design ideas.</p>
                 <textarea class="briefing-input" name="text" placeholder="Example: We are a tech start-up from the B2B sector.  Just two hard requirements: the design of the slides should be bright and the hexagon from our logo should appear regularly.  No comic style, please, but modern and serious, appropriate to our industry.  We would like to convey that we are technically up to date."></textarea>
             </div>
-        </div>
-        <div class="row brief-link">
-            <div class="col-lg-2">
-               <button class="order-button-list">Friendly</button>
+        
+            <h5 style="margin-top: 4%;">How should the general design style be?</h5>
+            <div class="col-lg-3">
+               <button onclick="selectButton(1)" id="but1" class="order-button-list">Friendly</button>
             </div>
+            <div class="col-lg-3">
+                <button onclick="selectButton(2)" id="but2" class="order-button-list">Corporate</button>
+             </div>
+             <div class="col-lg-3">
+                <button onclick="selectButton(3)" id="but3" class="order-button-list">Trustworthy</button>
+             </div>
+             <div class="col-lg-3">
+                <button onclick="selectButton(4)" id="but4" class="order-button-list">Innovative</button>
+             </div>
+             <div class="col-lg-3">
+                <button onclick="selectButton(5)" id="but5" class="order-button-list">Clear</button>
+             </div>
+             <div class="col-lg-3">
+                <button onclick="selectButton(6)" id="but6" class="order-button-list">Minimalistic</button>
+             </div>
+             <div class="col-lg-3">
+                <button onclick="selectButton(7)" id="but7" class="order-button-list">Seriously</button>
+             </div>
+             <div class="col-lg-3">
+                <button onclick="selectButton(8)" id="but8" class="order-button-list">Business</button>
+             </div>
+             <div class="col-lg-3">
+                <button onclick="selectButton(9)" id="but9" class="order-button-list">Modern</button>
+             </div>
+             <div class="col-lg-3">
+                <button onclick="selectButton(10)" id="but10" class="order-button-list">Playful</button>
+             </div>
+             <div class="col-lg-3">
+                <button onclick="selectButton(11)" id="but11" class="order-button-list">Well structured</button>
+             </div>
+             <div class="col-lg-3">
+                <button onclick="selectButton(12)" id="but12" class="order-button-list">Professional</button>
+             </div>
         </div>
         <div class="row brief-color">
             <div id="tab1" class="brief-content">
@@ -97,7 +130,7 @@
                     <input  style="display: contents;" onchange="uploadFiles()" type="file" id="file_upload" multiple />
                     <button  class="order-button">Browse</button>
                 </div>
-                <div  class="table table-files">
+                <div  class="table table-files" style="margin-top: 5%;">
                     <table id="file-table">
                         
                     </table>
@@ -275,6 +308,24 @@
         // var table = document.getElementById("file-table");
         // table.deleteRow(i-1)
 
+    }
+    function selectButton(number)
+    {
+        var name='but'+number;
+        var element=document.getElementById(name);
+
+        if(element.style['background-color']=="transparent"||element.style['background-color']=='')
+        {
+             element.style.backgroundColor="#fa5255";
+             element.style.color="white";
+             element.style.border="none";
+        }
+        else
+        {
+            element.style.backgroundColor="transparent";
+             element.style.color="black";
+             element.style.border="1px solid black";
+        }
     }
     function addPayClass(){
         var s2='brief_tab1'

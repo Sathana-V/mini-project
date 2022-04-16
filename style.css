@@ -625,11 +625,12 @@ td{
     border-radius:10px;
 }
 .order-button-list{
-  background-color: #fa5255;
-    color:white;
-    border:none;
+  background-color: transparent;
+    color:black;
+    border:1px solid black;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width:230px;
+    margin-top: 8%;
     height:50px;
     border-radius:10px;
 }
