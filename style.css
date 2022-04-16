@@ -624,6 +624,15 @@ td{
     height:50px;
     border-radius:10px;
 }
+.order-button-list{
+  background-color: #fa5255;
+    color:white;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width:230px;
+    height:50px;
+    border-radius:10px;
+}
 @media only screen and (max-width: 600px) {
     .manager .details .profile {
         width: 70%;
@@ -2038,6 +2047,21 @@ a.row-configure:hover {
     line-height: 21px;
     color: #37364D;
 }
+.briefing-input-link
+{
+    width: 100%;
+    height: 50px;
+    margin-top: 3%;
+    border: none;
+    padding-left: 5%;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 100px rgb(0 0 0 / 10%);
+    font-size: 18px;
+    line-height: 21px;
+    color: #37364D;
+}
+
 .btn-black{
   
   background-color: #fa5255;
@@ -2062,4 +2086,158 @@ height: 500px;
   width:230px;
   height:50px;
   border-radius:10px;
+}
+.brief-row,.brief-link{
+  
+  padding:4% 14%;
+  /* background: white; */
+}
+.brief-link{
+  background: #e0e0e0;
+}
+.brief-color{
+  background: #eeeded;
+  padding:4% 14%;
+}
+.brief-content h1{
+ font-size: 40px;
+ font-weight: 700;
+}
+.brief-content p{
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 5%;
+ }
+ .brief-color label{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 1%;
+  padding-left: 2%;
+ }
+ #agree-check input{
+   border: 1px solid #fa5255;
+   border-radius: 10px;
+  
+ }
+ .but-center{
+  margin-top: 5%;
+   text-align: center;
+ }
+ .upload-box{
+   margin-top: 5%;
+  border: 3px dashed #fa5255;
+  text-align: center;
+  padding:5%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+table#file-table {
+  width: inherit;
+}
+table#file-table td i{
+  cursor: pointer;
+  color: #00a151;
+  font-size: 20px;
+}
+table#file-table td i:hover{
+  color: #F64861;
+}
+table#file-table .table-row-1::before{
+ 
+  content: '';
+  background: url('images/doc.png') left center no-repeat;
+  vertical-align: middle;
+  background-size: 14px auto;
+  padding-left: 50px;
+}
+
+#brief-2 .row{
+  padding: 0% 14%;
+  margin-bottom: 14%
+}
+#brief-2 .row h1{
+  font-weight: 600;
+  font-size: 50px;
+}
+.card-billing.card{
+  border-radius: 10px;
+  padding-bottom: 5%;
+  margin-top: 4%;
+}
+.card-billing .card-head{
+
+  background-color: #000000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-billing .card-head h3{
+  color: white;
+  padding: 4%;
+}
+div#card-form label{
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 2%;
+  padding-left: 4%;
+}
+
+#card-form input{
+  outline: none;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 2%;
+    padding: 0 20px 0 40px;
+    border: 1px solid #C4C4C4;
+    -webkit-box-shadow: 0px 4px 100px rgb(18 19 20 / 10%);
+    -moz-box-shadow: 0px 4px 100px rgba(18, 19, 20, 0.1);
+    box-shadow: 0px 4px 100px rgb(18 19 20 / 10%);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 19px;
+    color: #37364D;
+}
+.user-input {
+  position: relative;
+}
+.user-input i{
+  position: absolute;
+            left: 14px;
+            top: 63px;
+            color: #f64861;
+}
+#card-form select{
+  outline: none;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px 0 40px;
+    border: 1px solid #C4C4C4;
+    -webkit-box-shadow: 0px 4px 100px rgb(18 19 20 / 10%);
+    -moz-box-shadow: 0px 4px 100px rgba(18, 19, 20, 0.1);
+    box-shadow: 0px 4px 100px rgb(18 19 20 / 10%);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 19px;
+    color: #37364D;
+}
+#card-form .row{
+  padding: 0%;
+}
+.paybill
+{
+  float: right;
+}
+.pay-content-2{
+  padding: 4%;
+}
+.pay-button{
+  margin-top: 5%;
+  text-align: center;
 }

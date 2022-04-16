@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS --> 
     <script src="Header.js" type="text/javascript" defer></script>
     <script src="Footer.js" type="text/javascript" defer></script>
+    <script src="Country.js" type="text/javascript" defer></script>
    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -22,7 +23,7 @@
       font-size: 50px;
     }
   </style>
-  <body class="brief-bgcolor">
+  <body class="">
     <header-component></header-component>
 
    
@@ -51,9 +52,9 @@
 
          </div>
      </div>
-    <div class="container-fluid">
+    <div class="container-fluid " id="brief-1">
 
-       <div class="container">
+     
         <div class="row brief-row">
             <div id="tab1" class="brief-content">
                 <h1>Describe your design ideas</h1>
@@ -61,23 +62,162 @@
                 <textarea class="briefing-input" name="text" placeholder="Example: We are a tech start-up from the B2B sector.  Just two hard requirements: the design of the slides should be bright and the hexagon from our logo should appear regularly.  No comic style, please, but modern and serious, appropriate to our industry.  We would like to convey that we are technically up to date."></textarea>
             </div>
         </div>
-        <div class="row brief-buttons">
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <button   style="margin-top:4%;margin-left: 4%;" class="button1 order-button">f   riendly</button>
-                
-                      <input type="checkbox" checked> Active
-                    
-                      <input type="checkbox" > Check
-                  
-                  </div>
+        <div class="row brief-link">
+            <div class="col-lg-2">
+               <button class="order-button-list">Friendly</button>
             </div>
         </div>
-       </div>
+        <div class="row brief-color">
+            <div id="tab1" class="brief-content">
+                <h1>Define your color scheme</h1>
+                <p>Describe what colors you would like to have in the presentation. If you have specific color codes, feel free to enter them here.</p>
+                <textarea class="briefing-input" name="text" placeholder="Describe your color scheme"></textarea>
+                <input type="checkbox" id="agree-check" name="agree" value="agree">
+                <label for="agree">I don't have a color scheme yet</label><br>
+            </div>
+        </div>
+        <div class="row brief-link">
+            <div id="tab1" class="brief-content">
+                <h1>Link to websites or presentations that you like</h1>
+                <p>This can be your own website, for example. The look and feel of your slides is largely based on the examples you linked. If you have your own professional website, we recommend attaching your own website so your slides have the same look and feel as your website.</p>
+                <input type="text" class="briefing-input-link" name="text" placeholder="link or url"></input>
+                <input type="text" class="briefing-input-link" name="text" placeholder="link or url"></input>
+                <input type="text" class="briefing-input-link" name="text" placeholder="link or url"></input>
+               </div>
+        </div>
+       
+        <div class="row brief-color">
+            <div id="tab1" class="brief-content">
+                <h1 style="text-align: center;">File Upload</h1>
+                <div onclick="fireClick()" ondrop="fireClick()" class="upload-box">
+                    <img src="images/upload.svg" alt="">
+                    <h4>
+                        Drag and Drop Files here
+                    </h4>
+                    <input  style="display: contents;" onchange="uploadFiles()" type="file" id="file_upload" multiple />
+                    <button  class="order-button">Browse</button>
+                </div>
+                <div  class="table table-files">
+                    <table id="file-table">
+                        
+                    </table>
+                </div>
+                <div class="but-center">
+                    <button  class="order-button">Continue to payment</button>
+              
+                </div>
+               
+            </div>
+            
+        </div>
+        
+        
     </div>
-     
+       
+    </div>
+    <div class="container-fluid " id="brief-2" style="display: none;">
+          <div class="row">
+              <h1>Pay</h1>
+              <div class="col-lg-6">
+                  <div class="card card-billing">
+                      <div class="card-head">
+                          <h3>Billing address</h3>
+                      </div>
+                     <div class="container-fluid" id="card-form">
+                         <div class="row">
+                            <div class="col-lg-6">
+                                <div class="user-input">
+                                    <label>First name</label>
+                                <i class="fa fa-user"></i>
+                                 <input type="text" placeholder="First Name">
+                            </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="user-input">
+                                  <label>Last name</label>
+                              <i class="fa fa-user"></i>
+                               <input type="text" placeholder="Last Name">
+                          </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="user-input">
+                                  <label>company</label>
+                              <i class="fa fa-user"></i>
+                               <input type="text" placeholder="company">
+                          </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="user-input">
+                                  <label>Phone Number</label>
+                              <i class="fa fa-phone"></i>
+                               <input type="text" placeholder="phone">
+                          </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="user-input">
+                                  <label>e-mail address</label>
+                              <i class="fa fa-envelope"></i>
+                               <input type="text" placeholder="e-mail">
+                          </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="user-input">
+                                  <label>Street</label>
+                              <i class="fa fa-map-marker"></i>
+                               <input type="text" placeholder="street">
+                          </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="user-input">
+                                  <label>City</label>
+                              <i class="fa fa-map-marker"></i>
+                               <input type="text" placeholder="city">
+                          </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="user-input">
+                                  <label>Postal code</label>
+                              <i class="fa fa-map-marker"></i>
+                               <input type="text" placeholder="postal code">
+                          </div>
+                          </div>
+                          <div class="col-lg-12">
+                              <div class="user-input">
+                                  <label>Country</label>
+                          
+                                <country-list></country-list>
+                                
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                          </div>
+                         </div>
+                     </div>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card card-billing">
+                    <div class="card-head">
+                        <h3>Order overview</h3>
+                        
+                    </div>
+                    <div class="pay-content-2">
+                        <p>Price <span class="paybill">148.65$</span></p>
+                    <h5>VAT 19% <span class="paybill">28.45$</span></h5>
+                      <hr>
+                      <h3>Total <span class="paybill">178.20$</span></h3>
+                   
+                    </div>
+                    </div>
+                    <div class="pay-button">
+                        <button class="order-button">Pay now</button>
+                    </div>
+          </div>
+        </div>
+</div>
       <footer-component></footer-component>
           <!-- Optional JavaScript; choose one of the two! -->
 <script>
+    var arr=[];
     function addBriefClass(){
         var s1='brief_tab1'
         var s2='brief_tab2'
@@ -85,6 +225,56 @@
         element.classList.add("is-active");
         var element = document.getElementById(s2);
          element.classList.remove("is-active");
+         document.getElementById('brief-2').style.display="none";
+        document.getElementById('brief-1').style.display="block";
+    }
+    function fireClick(){
+        console.log('clicked')
+        document.getElementById('file_upload').click();
+    }
+    function uploadFiles(){
+          files=document.getElementById('file_upload').files
+          var filenames="";
+          var table = document.getElementById("file-table");
+         
+         
+    for(var i=0;i<files.length;i++){
+        filenames=files[i].name;
+        var fn=filenames;
+        var extension= fn.split('.').pop();
+        console.log(extension)
+        arr.push(filenames)
+        var row = table.insertRow(-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        var count=i;
+        cell1.innerHTML =`<h5><span class="table-row-1 head`+count+`"><span>`+filenames+`</h5>`;
+        cell2.innerHTML = `<i onclick="removeFile(`+count+`)" id=`+count+`" class="fa fa-trash" aria-hidden="true"></i>`;
+
+    }
+  }
+    function removeFile(i)
+    {  
+      
+        arr.splice(i, 1)
+      
+        $('#file-table').empty();
+        var table = document.getElementById("file-table");
+        for(var i=0;i<arr.length;i++){
+
+        filenames=arr[i];
+       
+        
+       var row = table.insertRow(-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = filenames;
+        cell2.innerHTML = `<i onclick="removeFile(`+i+`)" id=`+i+`" class="fa fa-trash" aria-hidden="true"></i>`;
+       
+}
+        // var table = document.getElementById("file-table");
+        // table.deleteRow(i-1)
+
     }
     function addPayClass(){
         var s2='brief_tab1'
@@ -93,6 +283,8 @@
         element.classList.add("is-active");
         var element = document.getElementById(s2);
         element.classList.remove("is-active");
+        document.getElementById('brief-1').style.display="none";
+        document.getElementById('brief-2').style.display="block";
     }
 </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
