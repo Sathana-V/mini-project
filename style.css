@@ -635,6 +635,9 @@ td{
     border-radius:10px;
 }
 @media only screen and (max-width: 600px) {
+  #jumb-enter{
+    margin-top: 25%;
+  }
     .manager .details .profile {
         width: 70%;
         height: 50%;
