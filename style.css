@@ -234,7 +234,7 @@ p#misson-text
   .flex-container {
     margin-left: inherit;
 }
-  h1#inquiry-head,#why,#from-office {
+  h1#inquiry-head,#why,#from-office,#fq {
     font-size: 30px;
 }
   div#custCarousel {
