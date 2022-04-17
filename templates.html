@@ -164,7 +164,7 @@ td.bot-td2::after{
               </div>
              <div   class="nav-right1">
              <form  class="container-fluid justify-content-start ">
-              <button type="button"  class=" navbutton" style="background-color: #fa5255; color:white;font-size: 20px;">Order now</button>
+              <button type="button"  class=" navbutton" style="background-color: #fa5255; color:white;font-size: 20px;" onClick="moveAnother()">Order now</button>
             </form>
           </div>
       </div>
@@ -206,7 +206,7 @@ td.bot-td2::after{
 
                               </div>
                              
-                              <button  style="margin-top:4%;float: right;" class="order-button">Order Now</button>
+                              <button  style="margin-top:4%;float: right;" class="order-button" onClick="moveAnother()">Order Now</button>
                               <img src="images/cards.png" style="margin-top:4%;float: right;" alt="">
                           </div>
                         
@@ -625,6 +625,12 @@ td.bot-td2::after{
         var name="images/templates/p"+number.toString()+".png";
         // console.log(name)
         document.getElementById("model-img").src = name;
+    }
+    function moveAnother()
+    {
+      
+        location.href = "presentation-design.html";
+
     }
 </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->

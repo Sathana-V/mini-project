@@ -42,7 +42,7 @@
               <h5 class="card-title">Upload your Slides:</h5>
               <p class="card-text">Our designers start working immediately!</p>
               <div class="card-buttons">
-                <a href="#" class="btn btn-primary">Order Now</a>
+                <a href="#" class="btn btn-primary" onClick="moveAnother()">Order Now</a>
                 <button href="#" class="button button1">Request a quote</button>
               
               </div>
@@ -65,7 +65,7 @@
               <h5 class="card-title">Upload your Slides:</h5>
               <p class="card-text">Our designers start working immediately!</p>
               <div class="card-buttons">
-                <a href="#" class="btn btn-primary">Order Now</a>
+                <a href="#" class="btn btn-primary" onClick="moveAnother()">Order Now</a>
                 <button href="#" class="button button1">Request a quote</button>
               
              
@@ -112,7 +112,7 @@
                <div class="text">
                 <h1>High Quality<br> Presentation Slides</h1>
                 <p>When it comes to presentation slides, you can rest assured that we know exactly what we're doing. At PitchGuru you get the highest quality and top service at the best price.</p>
-                <button class="order-button">Order Now</button>
+                <button class="order-button" onclick="moveAnother()">Order Now</button>
                </div>
          </div>
        </div>
@@ -545,7 +545,7 @@
                 <h1>What are you <br>waiting for?</h1>
                 <h5>Start y
                   order at PitchGuru now.</h5>
-                <button class="order-button">Order Now</button>
+                <button class="order-button" onclick="moveAnother()">Order Now</button>
             </div>
             <div class="col-lg-6 ">
                 <table class="ordernow move image-box d-flex justify-content-around">
@@ -651,7 +651,12 @@ function checkWidth() {
     containerWidth = container.offsetWidth;
     setParams(containerWidth);
 }
+function moveAnother()
+    {
+      
+        location.href = "presentation-design.html";
 
+    }
 function setParams(w) {
     if (w < 551) {
         slidesPerPage = 1;
