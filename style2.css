@@ -1,0 +1,132 @@
+h1{
+    color: black;
+    font-size: 50px;
+  }
+  p#our-customers{
+    padding: 0% 20%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  #faq{
+    padding:6%;
+    
+}
+
+    @media only screen and (max-width: 600px) {
+
+      div#faq{
+    padding: 0%;
+    padding: 6% 0%;
+}
+.manager .details .profile
+
+{
+    margin-left: 17%;
+
+    height: 130px;
+    width: 130px;
+}
+.details h5 {
+    margin-top: 3%;
+    margin-left: -8%;
+}
+    }
+  @media only screen and (max-width: 600px)
+  {
+    input.business_email{
+      width: 95%;
+      margin-left: 3%;
+    }
+    .download-text {
+     padding:7% 0%;
+    }
+    .container-fluid.example-images {
+  margin-left: 0;
+  padding: 0;
+  text-align: -webkit-center;
+}
+    button.order-button {
+  width: -webkit-fill-available;
+}
+    .container.waiting-for .wait-text{
+      margin: 0%;
+      padding: 0%;
+    }
+    .container.waiting-for button{
+      width: 84%;
+    }
+ 
+    .container.waiting-for p, .container.waiting-for h2{
+      padding-left: 14%;
+    }
+    .container.waiting-for .card{
+      padding-left: 4%;
+      margin-left: 38%;
+    }
+    .message h1 ,h1.thous{
+  font-size: 30px;
+}
+
+.row.presentation-cards.bottom-cards p {
+  text-align: center;
+  margin-left: 15%;
+}
+.presentation .card1 {
+  margin-left: 0%;
+}
+p#our-customers{
+    padding: 0% 0%;
+  }
+.presentation-cards p, .presentation-cards h1 {
+  margin-left: 0%;
+  float: left;
+  text-align: center;
+}
+.presentation-container h1{
+font-size: 35px;
+}
+.heading.big p{
+padding: 0%;
+}
+.presentation-container{
+padding: 0%;
+margin-top: -10%;
+}
+.presentation-container h1,.presentation-container p{
+text-align: center;
+padding: 0%;
+}
+h1.text-left2 {
+  margin-left: 30%;
+}
+h1.text-left {
+  margin-left: 20%;
+}
+}
+  @media only screen and (min-width: 1200px) {
+td.colored.top-td2::before{
+  content: '';
+    position: absolute;
+    top: -10px;
+    left: 54.2%;
+    height: 10px;
+    width: 18.3%;
+   border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+   
+    background-color:#fa5255;
+}
+td.bot-td2::after{
+content: '';
+  position: absolute;
+  top: 370px;
+  left: 54.2%;
+  height: 40px;
+  width: 18.3%;
+  border-radius:0 0 5px 5px ;
+  -moz-border-radius: 5px 5px 0 0;
+ 
+  background-color:#fa5255;
+}
+}

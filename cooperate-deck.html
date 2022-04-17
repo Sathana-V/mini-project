@@ -38,44 +38,10 @@
   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"
   ></script>
   </head>
-   
+  <link rel="stylesheet" href="style2.css">
     <title>mini</title>
   </head>
-  <style>
-     h1{
-      color: black;
-      font-size: 50px;
-    }
-    body{
-      overflow-x: hidden;
-    }
-    @media only screen and (min-width: 1200px) {
-  td.colored.top-td2::before{
-    content: '';
-      position: absolute;
-      top: -10px;
-      left: 54.2%;
-      height: 10px;
-      width: 18.3%;
-     border-radius: 5px 5px 0 0;
-      -moz-border-radius: 5px 5px 0 0;
-     
-      background-color:#fa5255;
-  }
-td.bot-td2::after{
-  content: '';
-    position: absolute;
-    top: 370px;
-    left: 54.2%;
-    height: 40px;
-    width: 18.3%;
-    border-radius:0 0 5px 5px ;
-    -moz-border-radius: 5px 5px 0 0;
-   
-    background-color:#fa5255;
-}
-}
-  </style>
+  
   <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
       <div class="container-fluid">
@@ -429,7 +395,7 @@ td.bot-td2::after{
           <div class="container">
             <div class="heading big">
                 <h1  style="padding-top: 5%;">We support both investment firms and startups</h1>
-                <p style="padding:0 20%">Our customers include both startups and investors. We know both sides and can therefore optimally support you with your pitch deck</p>
+                <p id="our-customers">Our customers include both startups and investors. We know both sides and can therefore optimally support you with your pitch deck</p>
             </div>
        
             <div class="row" class="carousel-width">
@@ -506,43 +472,43 @@ td.bot-td2::after{
                      </div>
                 </div>
                 <div class="row presentation-cards bottom-cards">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                        <div class="image-box d-flex justify-content-around" >
-                            <div class="card">
-                                <img src="images/img-p6.svg" alt="">
-                            </div>
-                        </div>
-                        <h1>individuality</h1>
-                        <p>We design your slides according to your wishes.</p>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                        <div class="image-box d-flex justify-content-around" >
-                            <div class="card">
-                                <img src="images/img-p7.svg" alt="">
-                            </div>
-                        </div>
-                        <h1>Reliablility</h1>
-                        <p>Guaranteed delivery at the specified time.</p>     
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                        <div class="image-box d-flex justify-content-around" >
-                            <div class="card">
-                                <img src="images/img-p7.svg" alt="">
-                            </div>
-                        </div>
-                        <h1>100% Confidential</h1>
-                        <p>Every order is subject to our NDA.</p>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                        <div class="image-box d-flex justify-content-around" >
-                            <div class="card">
-                                <img src="images/img-p8.svg" alt="">
-                            </div>
-                        </div>
-                        <h1>Simply ordered</h1>
-                        <p>Order online in three easy steps.</p>     
-                    </div>
-                </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                      <div class="image-box d-flex justify-content-around" >
+                          <div class="card">
+                              <img src="images/img-p6.svg" alt="">
+                          </div>
+                      </div>
+                      <h1 class="text-left2">individuality</h1>
+                      <p>We design your slides according to your wishes.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                      <div class="image-box d-flex justify-content-around" >
+                          <div class="card">
+                              <img src="images/img-p7.svg" alt="">
+                          </div>
+                      </div>
+                      <h1 class="text-left2">Reliablility</h1>
+                      <p>Guaranteed delivery at the specified time.</p>     
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                      <div class="image-box d-flex justify-content-around" >
+                          <div class="card">
+                              <img src="images/img-p7.svg" alt="">
+                          </div>
+                      </div>
+                      <h1 class="text-left">100% Confidential</h1>
+                      <p>Every order is subject to our NDA.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                      <div class="image-box d-flex justify-content-around" >
+                          <div class="card">
+                              <img src="images/img-p8.svg" alt="">
+                          </div>
+                      </div>
+                      <h1 class="text-left">Simply ordered</h1>
+                      <p>Order online in three easy steps.</p>     
+                  </div>
+              </div>
             </div>
         </div>
         <div class="container-fluid background background-dark">
@@ -655,7 +621,7 @@ td.bot-td2::after{
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 style="text-align: center;">Thousands of companies trust PitchGuru for their presentations</h1>
+                    <h1 class="thous" style="text-align: center;">Thousands of companies trust PitchGuru for their presentations</h1>
                 </div>
             </div>
             <div class="row group-icons thousands-img">
@@ -741,7 +707,7 @@ td.bot-td2::after{
         </div>
      
 <div class="container-fluid background-dark">
-  <div class="container" id="faq" style="padding: 6%;">
+  <div class="container" id="faq">
     <h1 style="text-align: center;padding-bottom: 4%;">FAQ</h1>
     <div class="accordion w-100" id="basicAccordion" style="background-color: bisque;">
       <div class="accordion-item">

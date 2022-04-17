@@ -1295,9 +1295,35 @@ div#enterpise_jumb
  .container-fluid.example-images img{
    margin-top: 2%;
  }
- 
+ @media only screen and (max-width: 600px) {
+
+  
+  .manager .details .profile
+  
+  {
+  margin-left: 17%;
+  
+  height: 130px;
+  width: 130px;
+  }
+  .details h5 {
+  margin-top: 3%;
+  margin-left: -8%;
+  }
+  }
 @media only screen and (max-width: 600px) {
- 
+  .inquiry p {
+    margin-top: 4%;
+    font-weight: 400;
+    text-align: -webkit-center;
+}
+.box-card h1 {
+  font-size: 40px;
+  text-align: -webkit-center;
+}
+button.order-button {
+    width: -webkit-fill-available;
+}
   .card-buttons a.btn.btn-primary{
    text-align: center;
    padding-top: 4%;
@@ -1317,6 +1343,7 @@ div#enterpise_jumb
   }
   .container-fluid.example-images {
     margin-left: 0;
+    text-align: -webkit-center;
     padding: 0;
   }
   .container-fluid.example-images img{

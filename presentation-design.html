@@ -42,12 +42,48 @@
     <title>mini</title>
   </head>
   <style>
+    .row-11{
+      padding:0% 10%;
+      padding-bottom: 5%;
+    }
      h1{
       color: black;
       font-size: 50px;
     }
     body{
       overflow-x: hidden;
+    }
+    @media only screen and (max-width: 600px) {
+      .table-content table, .table-content td, .table-content th {
+
+      width: -webkit-fill-available;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0%;
+    font-size: 15px;
+    padding-top: 3%;
+    }
+    .table-content table select, .table-content h4, .table-content option .table-content table, .table-content td, .table-content table tr
+    {
+      font-size: 17px;
+    }
+      .row-11{
+      padding:0%;
+      margin-top: -14%;
+    }
+    button{
+      margin: 5%;
+    }
+      h1{
+      color: black;
+      font-size: 40px;
+    }
+   h1,p{
+     text-align: center;
+   }
+   .heading h1{
+     font-size: 30px;
+   }
     }
     @media only screen and (min-width: 1200px) {
   td.colored.top-td2::before{
@@ -172,7 +208,7 @@ td.bot-td2::after{
     </nav>
     <div class="container-fluid pitch-decks" style="margin-top: 0%;">
      <div class="container">
-      <div class="row" style="padding:0% 10%;padding-bottom: 5%;">
+      <div class="row" class="row-11">
         <div class="col-lg-8">
           <div class="row">
             <div class="col-lg-12">
