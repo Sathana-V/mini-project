@@ -1297,7 +1297,12 @@ div#enterpise_jumb
  }
  
 @media only screen and (max-width: 600px) {
-
+ 
+  .card-buttons a.btn.btn-primary{
+    padding-top: 4%;
+     width:140px;
+  }
+  
   #carouselMDExample,#carouselMDExample2,#carouselMDExample3,#carouselMDExample4,#carouselMDExample5{
     padding: 0% 3%;
     width: 100%;
