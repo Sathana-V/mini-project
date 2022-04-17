@@ -703,7 +703,7 @@ td{
         width:40px;
     }
     .image img{
-        width:100%;
+      width: -webkit-fill-available;
     }
     .text h1{
         font-size: 30px;
@@ -1299,8 +1299,12 @@ div#enterpise_jumb
 @media only screen and (max-width: 600px) {
  
   .card-buttons a.btn.btn-primary{
-    padding-top: 4%;
-     width:140px;
+   text-align: center;
+   padding-top: 4%;
+   font-size: 20px;
+   font-weight: 600;
+   margin-left: -10%;
+     width:100%;
   }
   
   #carouselMDExample,#carouselMDExample2,#carouselMDExample3,#carouselMDExample4,#carouselMDExample5{
@@ -1365,7 +1369,12 @@ div#enterpise_jumb
     margin-bottom: 4%;
   }
   button.button.button1 {
-    width: fit-content;
+    text-align: center;
+   margin-top: 4%;
+   margin-left: -10%;
+   font-size: 20px;
+   font-weight: 600;
+     width:100%;
   }
   .enterpise{
     text-align: center;
