@@ -2300,3 +2300,31 @@ div#card-form label{
   margin-top: 5%;
   text-align: center;
 }
+img.customer-img{
+  width: 100%;
+}
+.cutomer-page h1{
+  font-size: 50px;
+  padding-top: 15%;
+  
+}
+.cutomer-page .row{
+  padding-top: 14%;
+}
+.cutomer-page .row:nth-child(1){
+  padding-top: 0%;
+}
+.cutomer-page p{
+  
+  color: #57586E;
+  padding-bottom: 20px;
+  padding-top: 5%;
+    font-size: 30x;
+  
+}
+.t-company{
+  text-align: center;
+}
+.t-company img{
+  margin-top: 4%;
+}

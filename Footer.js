@@ -43,26 +43,26 @@ class Footer extends HTMLElement {
                   <div class="col-lg-2 col-md-6">
                      <strong><h5 class="text-black mb-3">company </h5></strong> 
                       <ul class="list-unstyled text-muted">
-                          <li><a href="#">about us</a></li>
-                          <li><a href="#">Customers</a></li>
-                          <li><a href="#">Trust & Security</a></li>
-                          <li><a href="#">Start Order</a></li>
+                          <li><a href="about.html">about us</a></li>
+                          <li><a href="customer.html">Customers</a></li>
+                          <li><a href="trust.html">Trust & Security</a></li>
+                          <li><a href="presentation-design.html">Start Order</a></li>
                       </ul>
                   </div>
                   <div class="col-lg-1"></div>
                   <div class="col-lg-2 col-md-6">
                       <strong><h5 class="text-black mb-3">resources</h5></strong>
                       <ul class="list-unstyled text-muted">
-                          <li><a href="#">white paper</a></li>
-                          <li><a href="#">Content sheet</a></li>
-                          <li><a href="#">101 investor questions</a></li>
+                          <li><a href="resource1.html">white paper</a></li>
+                          <li><a href="resource2.html">Content sheet</a></li>
+                          <li><a href="resource3.html">101 investor questions</a></li>
                       </ul>
                   </div>
                   <div class="col-lg-1"></div>
                   <div class="col-lg-2 col-md-6">
                     <strong><h5 class="text-black mb-3">Information</h5></strong>
                     <ul class="list-unstyled text-muted">
-                        <li><a href="#">Faq</a></li>
+                        <li><a href="faq.html">Faq</a></li>
                     </ul>
                 </div>
                 <div class="payments">
