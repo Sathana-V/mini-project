@@ -9,7 +9,7 @@ class Header extends HTMLElement {
       
     <nav class="navbar navbar-expand-lg  fixed-top navbar-light bg-light">
     <div class="container-fluid">
-      <img src="images/pitch.png" alt="" width="170px" height="50px">
+      <img style="cursor:pointer;" onclick="moveHome()" src="images/pitch.png" alt="" width="170px" height="50px">
      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@ class Header extends HTMLElement {
               <li><a class="dropdown-item" href="pitch-deck.html">pitch decks</a></li>
               <li><a class="dropdown-item" href="sales-deck.html">sales decks</a></li>
               <li><a class="dropdown-item" href="finance-deck.html">finance decks</a></li>
-              <li><a class="dropdown-item" href="cooperate.html">corporate decks</a></li>
+              <li><a class="dropdown-item" href="cooperate-deck.html">corporate decks</a></li>
             </ul>
           </li>
           <li class="nav-item">
