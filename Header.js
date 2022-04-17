@@ -5,7 +5,7 @@ class Header extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-      
+    
       
     <nav class="navbar navbar-expand-lg  fixed-top navbar-light bg-light">
     <div class="container-fluid">
@@ -66,7 +66,7 @@ class Header extends HTMLElement {
             </div>
            <div   class="nav-right1">
            <form  class="container-fluid justify-content-start ">
-            <button type="button"  class="navbutton" style="background-color: #fa5255; color:white;font-size: 20px;">Order now</button>
+            <button type="button" onclick="moveAnother()" class="navbutton" style="background-color: #fa5255; color:white;font-size: 20px;">Order now</button>
           </form>
         </div>
     </div>
