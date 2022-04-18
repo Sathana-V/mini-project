@@ -239,9 +239,16 @@ p#misson-text
   h1.content-text{
     font-size: 15px;
   }
+  .navbar-nav .dropdown-menu {
+    position: static;
+    text-align: center;
+}
   p#deck-p, p#deck-p2{
     padding: 0% 0%;
   }
+  .nav-right1 button {
+    margin-left: 14%;
+}
   h1#pitch2-heading {
     font-size: 20px;
 }
