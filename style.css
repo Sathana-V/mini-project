@@ -1,3 +1,8 @@
+
+body,html
+{
+  font-family:"Roboto",sans-serif;
+}
 .navbar ul li:hover > a {
     text-decoration-thickness: 3px;
      border-bottom: solid 2px #eb3b3b;
@@ -1030,7 +1035,7 @@ tbody, td, tfoot, th, thead, tr,td{
   
   .jumbotron-background {
     object-fit:cover;
-    font-family: 'object-fit: cover;';
+   
     position:absolute;
     top:0;
     z-index:1;
@@ -1197,7 +1202,7 @@ div#enterpise_jumb
 }
 .inquiry img{
   border-radius: 30px;
-  width: 90%;
+  width: inherit;
   height: 90%;
   padding-top: 8%;
 }
@@ -1296,7 +1301,19 @@ div#enterpise_jumb
    margin-top: 2%;
  }
  @media only screen and (max-width: 600px) {
-
+  .download-text {
+    padding: 6% 0%;
+    text-align: center;
+}
+input.business_email {
+  width: -webkit-fill-available;
+} 
+p.pitech-head-text {
+  text-align: -webkit-center;
+}
+button.order-button {
+width: -webkit-fill-available;
+}
   .pitch-decks p,p#deck-p{
     text-align: center;
   }
@@ -1314,6 +1331,10 @@ div#enterpise_jumb
   }
   }
 @media only screen and (max-width: 600px) {
+  div#faqq{
+   padding:0%;
+    text-align: center;
+}
   .inquiry p {
     margin-top: 4%;
     font-weight: 400;
