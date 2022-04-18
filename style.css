@@ -1297,7 +1297,9 @@ div#enterpise_jumb
  }
  @media only screen and (max-width: 600px) {
 
-  
+  .pitch-decks p,p#deck-p{
+    text-align: center;
+  }
   .manager .details .profile
   
   {
