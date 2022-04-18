@@ -1411,12 +1411,16 @@ button.order-button {
     padding: 1.25rem;
       padding-left: 7rem;
   }
-  p.card-text{
-    text-align: left;
-  }
+  p.card-text {
+    margin-left: -37%;
+    text-align: center;
+}
+  /* .no-gutters p{
+    text-align: center;
+  } */
   .no-gutters img {
-    padding-left: 13%;
-  }
+    margin-left: 25%;
+}
   a.btn.btn-primary {
     width: fit-content;
   }
