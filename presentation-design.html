@@ -287,7 +287,7 @@ td.bot-td2::after{
                     
                    </table>
                  </div>
-                 <h4>Price<span style="padding-left:4%;font-size:10px;display:inline-block">&nbsp;excl. VAT</span><span id="amount">&nbsp;348</span>&nbsp;€ 359.40</h4>
+                 <h4>Price<span style="padding-left:4%;font-size:10px;display:inline-block">&nbsp;excl. VAT&nbsp;</span><span id="amount">203.88</span>&nbsp;</h4>
                  <button onclick="moveAnother()" style="margin-top:4%" class="order-button">On to the briefing</button>
                  <button   style="margin-top:4%;margin-left: 4%;" class="button1 order-button">Request an offer</button>
                 
@@ -481,17 +481,19 @@ td.bot-td2::after{
     function increment()
     {
       var num=parseInt(document.getElementById('slides').value);
-      
-     
-      document.getElementById('slides').value=num+1;
-      document.getElementById('amount').innerHTML=num*29;
+      var slides=document.getElementById('slides').value=num+1;
+      let value=slides*16.99;
+    
+      document.getElementById('amount').innerHTML=value.toFixed(2);
     }
     function decrement()
     {
       var num=parseInt(document.getElementById('slides').value);
-      document.getElementById('slides').value=num-1;
-      var num2=parseInt(document.getElementById('amount').innerHTML);
-       document.getElementById('amount').innerHTML=num2-29;
+      var slides= document.getElementById('slides').value=num-1;
+      let value=slides*16.99;
+    
+     
+       document.getElementById('amount').innerHTML=value.toFixed(2);
     }
     function moveAnother()
     {
