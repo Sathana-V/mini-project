@@ -9,7 +9,7 @@ class Header extends HTMLElement {
       
     <nav class="navbar navbar-expand-lg  fixed-top navbar-light bg-light">
     <div class="container-fluid">
-      <img style="cursor:pointer;" onclick="moveHome()" src="images/pitch.png" alt="" width="170px" height="50px">
+      <img style="cursor:pointer;" onclick="moveHome()" src="images/logo-111.png" alt="" width="170px" height="50px">
      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
