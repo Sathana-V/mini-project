@@ -12,7 +12,12 @@ h1{
     padding:6%;
     
 }
-
+img.footer-img {
+  width: inherit;
+}
+img.footer-img2 {
+  width: -webkit-fill-available;
+}
     @media only screen and (max-width: 600px) {
 
       div#faq{
