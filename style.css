@@ -53,8 +53,13 @@ body,html
      height: fit-content;
       justify-content: space-between;
   }
-  
-
+  .navbar img {
+    width: fit-content;
+    height: 40px;
+}
+  img.footer-img {
+    width: inherit;
+}
   .navbar ul li{
     font-size:20px;
     font-weight: 700;
