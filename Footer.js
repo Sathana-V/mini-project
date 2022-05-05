@@ -27,7 +27,7 @@ class Footer extends HTMLElement {
               <div class="row gy-4 gx-5 mt-3" style="margin-top:8%">
                   <div class="col-lg-4 col-md-6">
                   
-                      <img usemap="#pitch-group-links" src="images/logo-111.png" alt="logo" width="200" height="100"/>
+                      <img usemap="#pitch-group-links" class="footer-img" src="images/logo-111.png" alt="logo"/>
                       <map name = "pitch-group-links">
                         <area shape = "rect" coords = "14,84,36,106" 
                            href = "https://google.com" alt="linked-in"  />
