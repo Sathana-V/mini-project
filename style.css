@@ -3,6 +3,7 @@ body,html
 {
   font-family:"Roboto",sans-serif;
 }
+
 .navbar ul li:hover > a {
     text-decoration-thickness: 3px;
      border-bottom: solid 2px #eb3b3b;
@@ -1337,6 +1338,7 @@ width: -webkit-fill-available;
   height: 130px;
   width: 130px;
   }
+  
   .details h5 {
   margin-top: 3%;
   margin-left: -8%;
@@ -2402,4 +2404,8 @@ img.customer-img{
 }
 .t-company img{
   margin-top: 4%;
+}
+img.navicon{
+  padding-left: 1%;
+  height: 50px;
 }
