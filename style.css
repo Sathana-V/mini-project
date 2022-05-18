@@ -934,33 +934,35 @@ td{
       padding: 10%;
       margin-top: 4%;
       border-radius: 20px;
-      height: 400px;
+      height: 450px;
      
   }
   .sheet h1{
     font-weight: bold;
-    font-size: 24px;
+    font-size: larger;
     line-height: 35px;
     text-align: center;
     color: #000000;
   }
   .sheet h5{
-    
+   
     color:rgb(70, 70, 70);
-    font-size: 18px;
+    height: 40px;
     text-align: center;
   }
   .sheet p{
     padding-top:8%;
     font-size: 20px;
+    
     line-height: 26px;
+    height: 50%;
     text-align: center;
     color: #57586E;
   }
   .sheet img{
     padding-top:16%;
       width:100px;
-      height: 90px;
+      
       margin-left: 35%;
   }
   .waiting
@@ -2408,4 +2410,64 @@ img.customer-img{
 img.navicon{
   padding-left: 1%;
   height: 50px;
+}
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    .row.footer-heading h5{
+      font-size: inherit;
+  }
+  h1.pitch-head {
+    font-size: revert;
+}
+  .image-pitch img {
+    margin-top: -30%;
+    width: 420px;
+    height: 560px;
+}
+#pitch2-heading {
+  font-size: 32px;
+}
+  .example-images img{
+    width: -webkit-fill-available;
+    height:200px;
+    border-radius: 5px 5px 0 0;
+  }
+    .navbar-expand-lg img{
+      width: 100px;
+    }
+    #add1{
+      display: none;
+    }
+    .navbar-expand-lg p{
+      font-size:small;
+      padding-top: 10%;
+    }
+    
+    .adds .row{
+      display: none;
+    }
+    .navbar-expand-lg .navbar-collapse button{
+      width: 140px;
+    }
+    .text p {
+      margin-top: 3rem;
+      font-size: 15px;
+  }
+   .pitch-decks .col-lg-5:nth-child(3) {
+    padding-left: 10%;
+}
+button.order-button {
+  margin-left: 4%;
+}
+img#dwlnd1 {
+  width: -webkit-fill-available;
+  height: 500px;
+  margin-top: 15%;
+}
+    .image img {
+      width: auto;
+      border-radius: 10px;
+  }
 }
