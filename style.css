@@ -2411,6 +2411,29 @@ img.navicon{
   padding-left: 1%;
   height: 50px;
 }
+/* .text-items.order-text-items {
+  height: 200px;
+  float:left;
+}
+.advantages .card {
+  width: 100px;
+  height: 90px;
+  
+  margin-left: 35%;
+  padding: 2% 4%;
+  padding-left: 2%;
+  -moz-box-shadow: 0px 2px 5px rgba(201, 201, 201, 0.5);
+  box-shadow: 0px 2px 5px rgb(201 201 201 / 50%);
+  background-color: #FFFFFF;
+} */
+.text-items.order-text-items h3{
+  height: 50px;
+  font-size: larger;
+}
+
+#last-row{
+  margin-top: -2%;
+}
 @media only screen 
   and (min-width: 1024px) 
   and (max-height: 1366px) 
@@ -2465,6 +2488,44 @@ img#dwlnd1 {
   width: -webkit-fill-available;
   height: 500px;
   margin-top: 15%;
+}
+.text-items.order-text-items {
+  height: 200px;
+}
+.advantages .card{
+  margin-left:02%;
+}
+#ad2 .card {
+  width: 100px;
+  height: 90px;
+  
+  margin-left:30%;
+  padding: 2% 4%;
+  padding-left: 2%;
+  -moz-box-shadow: 0px 2px 5px rgba(201, 201, 201, 0.5);
+  box-shadow: 0px 2px 5px rgb(201 201 201 / 50%);
+  background-color: #FFFFFF;
+}
+.order-button-list {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: inherit;
+  margin-top: 8%;
+  height: 50px;
+  border-radius: 10px;
+}
+.text-items h1{
+  font-size: larger;
+  height: 40px;
+}
+.text-items p{
+  text-align: justify;
+}
+.text-items.order-text-items h3{
+  height: 50px;
+  font-size: larger;
 }
     .image img {
       width: auto;
