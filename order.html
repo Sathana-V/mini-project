@@ -9,7 +9,7 @@
     <script src="Header.js" type="text/javascript" defer></script>
     <script src="Footer.js" type="text/javascript" defer></script>
     <script src="Country.js" type="text/javascript" defer></script>
-   
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -41,11 +41,128 @@ h1,p,h5{
 }
     }
   </style>
-  <body class="">
+  <script>
+      var slide_count;
+      function calcPrice()
+      {
+        let  urlString= window.location.href;
+        let paramString = urlString.split('?')[1];
+        let queryString = new URLSearchParams(paramString);
+        let keys = queryString.keys();
+        console.log(keys);
+        let list=[]
+        for (const value of keys) {
+            list.push(value)
+        }
+        console.log(list[0])
+        // for (let pair of queryString.entries()) {
+        // console.log("Key is: " + pair[0]);
+        
+        // }
+        slide_count=list[0];
+        let tax=(19*list[0])/100;
+        let vat=tax+parseFloat(list[0])
+        console.log(vat);
+         document.getElementById('vat').innerHTML=tax;
+         document.getElementById('price').innerHTML=list[0];
+         document.getElementById('total').innerHTML=vat;
+      }
+      function callMethod(){
+        let data = new FormData()
+          console.log("called")
+          let description = document.getElementById('description').value;
+         let color = document.getElementById('color').value;
+          let fname = document.getElementById('fname').value;
+          let lname = document.getElementById('lname').value;
+          let company = document.getElementById('company').value;
+          let number = document.getElementById('number').value;
+          let email = document.getElementById('email').value;
+          let street = document.getElementById('street').value;
+          let city = document.getElementById('city').value;
+          let link1 = document.getElementById('link1').value;
+          let link2 = document.getElementById('link2').value;
+          let link3 = document.getElementById('link3').value;
+          let postcode = document.getElementById('postcode').value;
+          let country = document.getElementById('country').value;
+          let slide=slide_count;
+          let cost=document.getElementById('total').innerHTML;
+          arr=[];
+           for(i=1;i<=12;i++)
+           {
+                   var name='but'+i;
+                   var element=document.getElementById(name);
+                   if(element.style['background-color']=="#fa5255"||element.style['color']=='white')
+                    {
+                        arr.push(name);
+                       
+                    }
+
+           }
+            console.log(arr)
+            data.append('fname', fname)
+            data.append('lname', lname)
+            data.append('description', description)
+            data.append('color', color)
+            data.append('company', company)
+            data.append('number', number)
+            data.append('email', email)
+            data.append('street', street)
+            data.append('city', city)
+            data.append('country', country)
+            data.append('postcode', postcode)
+            data.append('button', arr)
+            data.append('slide', slide)
+            data.append('price', cost)
+            data.append('link1', link1)
+            data.append('link2', link2)
+            data.append('link3', link3)
+          
+            const fileInput = document.getElementById('file_upload');
+
+          const selectedFile = fileInput.files[0];
+     console.log(selectedFile);
+     data.append('file', selectedFile)
+        for (var pair of data.entries()) {
+          console.log(pair[0] + ', ' + pair[1])
+        }
+        axios.post('http://localhost/order-management/college-dashboard-backend/public/orders/add', data,
+            {
+              headers: {
+                "Content-Type": "multipart/form-data"
+              }
+            })
+        .then((response) => console.log(response)) 
+        .catch((error) => {
+            console.log(error); 
+        });
+           
+            // fetch('https://jsonplaceholder.typicode.com/posts', {
+            // method: 'POST',
+            // body: lbody,
+            // headers: {
+            //     'Content-type': 'application/json; charset=UTF-8',
+            // 'Content-Type': req.headers['content-type'] || 'multipart/form-data;'
+            // }
+            // })
+            // .then(function(response)
+            // { 
+            // return response.json()}
+            // )
+            // .then(function(data)
+            // {console.log(data)
+            // title=document.getElementById("title")
+            // body=document.getElementById("bd")
+            // title.innerHTML = data.title
+            // body.innerHTML = data.body  
+            // })
+            // .catch(error => console.error('Error:', error)); 
+            
+      }
+  </script>
+  <body onload="calcPrice()" class="">
     <header-component></header-component>
 
-   
-   
+  
      <div class="container-fluid example-grid">
            <h1>Configure your slides</h1>
      </div>
@@ -77,7 +194,7 @@ h1,p,h5{
             <div id="tab1" class="brief-content">
                 <h1>Describe your design ideas</h1>
                 <p>Give a brief overview of your design ideas.</p>
-                <textarea class="briefing-input" name="text" placeholder="Example: We are a tech start-up from the B2B sector.  Just two hard requirements: the design of the slides should be bright and the hexagon from our logo should appear regularly.  No comic style, please, but modern and serious, appropriate to our industry.  We would like to convey that we are technically up to date."></textarea>
+                <textarea name="description" id="description" class="briefing-input" name="text" placeholder="Example: We are a tech start-up from the B2B sector.  Just two hard requirements: the design of the slides should be bright and the hexagon from our logo should appear regularly.  No comic style, please, but modern and serious, appropriate to our industry.  We would like to convey that we are technically up to date."></textarea>
             </div>
         
             <h5 style="margin-top: 4%;">How should the general design style be?</h5>
@@ -122,7 +239,7 @@ h1,p,h5{
             <div id="tab1" class="brief-content">
                 <h1>Define your color scheme</h1>
                 <p>Describe what colors you would like to have in the presentation. If you have specific color codes, feel free to enter them here.</p>
-                <textarea class="briefing-input" name="text" placeholder="Describe your color scheme"></textarea>
+                <textarea name="color"  id="color" class="briefing-input" type="text" placeholder="Describe your color scheme"></textarea>
                 <input type="checkbox" id="agree-check" name="agree" value="agree">
                 <label for="agree">I don't have a color scheme yet</label><br>
             </div>
@@ -131,9 +248,9 @@ h1,p,h5{
             <div id="tab1" class="brief-content">
                 <h1>Link to websites or presentations that you like</h1>
                 <p>This can be your own website, for example. The look and feel of your slides is largely based on the examples you linked. If you have your own professional website, we recommend attaching your own website so your slides have the same look and feel as your website.</p>
-                <input type="text" class="briefing-input-link" name="text" placeholder="link or url"></input>
-                <input type="text" class="briefing-input-link" name="text" placeholder="link or url"></input>
-                <input type="text" class="briefing-input-link" name="text" placeholder="link or url"></input>
+                <input name="link1" id="link1" type="text" class="briefing-input-link" name="text" placeholder="link or url"></input>
+                <input name="link2"  id="link2" type="text" class="briefing-input-link" name="text" placeholder="link or url"></input>
+                <input name="link3"  id="link3" type="text" class="briefing-input-link" name="text" placeholder="link or url"></input>
                </div>
         </div>
        
@@ -154,7 +271,7 @@ h1,p,h5{
                     </table>
                 </div>
                 <div class="but-center">
-                    <button  class="order-button">Continue to payment</button>
+                    <button onclick="addPayClass()"  class="order-button">Continue to payment</button>
               
                 </div>
                
@@ -180,56 +297,56 @@ h1,p,h5{
                                 <div class="user-input">
                                     <label>First name</label>
                                 <i class="fa fa-user"></i>
-                                 <input type="text" placeholder="First Name">
+                                 <input  id="fname" name="fname" type="text" placeholder="First Name">
                             </div>
                             </div>
                             <div class="col-lg-6">
                               <div class="user-input">
                                   <label>Last name</label>
                               <i class="fa fa-user"></i>
-                               <input type="text" placeholder="Last Name">
+                               <input  id="lname" name="lname" type="text" placeholder="Last Name">
                           </div>
                           </div>
                           <div class="col-lg-6">
                               <div class="user-input">
                                   <label>company</label>
                               <i class="fa fa-user"></i>
-                               <input type="text" placeholder="company">
+                               <input id="company" name="company" type="text" placeholder="company">
                           </div>
                           </div>
                           <div class="col-lg-6">
                               <div class="user-input">
                                   <label>Phone Number</label>
                               <i class="fa fa-phone"></i>
-                               <input type="text" placeholder="phone">
+                               <input id="number" name="number" type="text" placeholder="phone">
                           </div>
                           </div>
                           <div class="col-lg-6">
                               <div class="user-input">
                                   <label>e-mail address</label>
                               <i class="fa fa-envelope"></i>
-                               <input type="text" placeholder="e-mail">
+                               <input id="email" name="email" type="text" placeholder="e-mail">
                           </div>
                           </div>
                           <div class="col-lg-6">
                               <div class="user-input">
                                   <label>Street</label>
                               <i class="fa fa-map-marker"></i>
-                               <input type="text" placeholder="street">
+                               <input id="street" name="street" type="text" placeholder="street">
                           </div>
                           </div>
                           <div class="col-lg-6">
                               <div class="user-input">
                                   <label>City</label>
                               <i class="fa fa-map-marker"></i>
-                               <input type="text" placeholder="city">
+                               <input id="city" name="city" type="text" placeholder="city">
                           </div>
                           </div>
                           <div class="col-lg-6">
                               <div class="user-input">
                                   <label>Postal code</label>
                               <i class="fa fa-map-marker"></i>
-                               <input type="text" placeholder="postal code">
+                               <input id="postcode" name="postcode" type="text" placeholder="postal code">
                           </div>
                           </div>
                           <div class="col-lg-12">
@@ -252,15 +369,15 @@ h1,p,h5{
                         
                     </div>
                     <div class="pay-content-2">
-                        <p>Price <span class="paybill">148.65$</span></p>
-                    <h5>VAT 19% <span class="paybill">28.45$</span></h5>
+                        <p>Price <span id="price" class="paybill">148.65$</span></p>
+                    <h5>VAT 19% <span id="vat" class="paybill">28.45$</span></h5>
                       <hr>
-                      <h3>Total <span class="paybill">178.20$</span></h3>
+                      <h3>Total <span id="total" class="paybill">178.20$</span></h3>
                    
                     </div>
                     </div>
                     <div class="pay-button">
-                        <button class="order-button">Pay now</button>
+                        <button onclick="callMethod()" class="order-button">Order now</button>
                    
                       <br>
                         <img style="width:100%;height:50px;margin-top:4%;cursor: pointer;" usemap="#pitch-group-links" src="images/payment2.png" alt="logo" width="200" height="100"/>
@@ -364,7 +481,7 @@ h1,p,h5{
         }
         else
         {
-            element.style.backgroundColor="transparent";
+             element.style.backgroundColor="transparent";
              element.style.color="black";
              element.style.border="1px solid black";
         }
@@ -388,5 +505,26 @@ h1,p,h5{
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>

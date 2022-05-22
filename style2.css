@@ -41,8 +41,33 @@ img.footer-img2 {
     .container-fluid.presentation {
       margin-top: -7%;
   }
+  .card1 .card , #deck-card2 .card{
+    float: left;
+    margin-left: -10%;
+}
+@media only screen and (min-width: 1200px)
+{
+.container.waiting.pitch-guru-waiting {
+  margin-top: -10%;
+}
+.heading.big {
+  padding: 0% 15%;
+}
+.heading.big  h1 {
+  font-size: 35px;
+}
+.container-fluid.background.ready {
+  padding: 7% 0%;
+}
+.payments img {
+   width: auto; 
+}
+}
   @media only screen and (max-width: 600px)
   {
+    #deck-card2 .card{
+      margin-left: 4%;
+    }
     .navbar-nav .dropdown-menu {
       position: static;
       text-align: center;
@@ -135,7 +160,7 @@ h1.text-left {
 }
 }
   @media only screen and (min-width: 1200px) {
-td.colored.top-td2::before{
+/* td.colored.top-td2::before{
   content: '';
     position: absolute;
     top: -10px;
@@ -158,5 +183,5 @@ content: '';
   -moz-border-radius: 5px 5px 0 0;
  
   background-color:#fa5255;
-}
+} */
 }

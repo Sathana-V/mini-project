@@ -174,7 +174,7 @@ td.bot-td2::after{
               <a class="nav-link" href="/enterprise.html">Enterprise</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Templates</a>
+              <a class="nav-link" href="/templates.html">Templates</a>
             </li>
             <li class="nav-item dropdown">
                 
@@ -215,17 +215,28 @@ td.bot-td2::after{
         <div class="col-lg-8">
           <div class="row">
             <div class="col-lg-12">
-              <h1>Presentation Configurator</h1>
+              <h1 class="config">Presentation Configurator</h1>
             </div>
             </div>
-            <div class="row">
-            <div class="col-lg-12" style="display: flex;justify-content: space-between;margin-top: 5%;" >
-              <p class="tick-content"> &nbsp;<span  class="fa fa-check tick-order"></span> &nbsp;€29.95/slide</p>
+            <div class="row config-items">
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <p class="tick-content"> &nbsp;<span  class="fa fa-check tick-order"></span> &nbsp;€29.95/slide</p>
              
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <p class="tick-content"> &nbsp;<span  class="fa fa-check tick-order"></span> &nbsp;€29.95/slide</p>
+             
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12">
+                <p class="tick-content"> &nbsp;<span  class="fa fa-check tick-order"></span> &nbsp;€29.95/slide</p>
+             
+              </div>
+            <!-- <div class="col-lg-12" style="display: flex;justify-content: space-between;margin-top: 5%;" >
+              
               <p class="tick-content"> &nbsp;<span class="fa fa-check tick-order"></span> &nbsp;3-4 days delivery time</p>
               
               <p class="tick-content"> &nbsp;<span class="fa fa-check tick-order"></span> &nbsp;3 feedback rounds included</p>
-            </div>
+            </div> -->
             <p>In three easy steps to your presentation. Choose your number of slides and delivery time in the configurator, fill out the design briefing and upload your slides.</p>
           </div>
           <div class="video-card">
@@ -303,10 +314,10 @@ td.bot-td2::after{
      </div>
     <div class="container">
    
-        <h1 style="text-align: center;">The PitchGuru advantages</h1>
+        <h1 class="adv" style="text-align: center;">The PitchGuru advantages</h1>
        
-        <div class="row advantages advantages">
-          <div class="col-lg-3 col-md-4 col-sm-6">
+        <div id="design" class="row advantages advantages ">
+          <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="card">
                   <img src="images/icon-advantages-2.svg" alt="">
                    
@@ -321,7 +332,7 @@ td.bot-td2::after{
                       Your personal contact for all aspects of the project </p>
                 </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="card">
                   <img src="images/icon-advantages-1.svg" alt="">
                    
@@ -337,7 +348,7 @@ td.bot-td2::after{
                 </div>
           </div>
           
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="card">
                   <img src="images/icon-advantages-6.svg" alt="">
                    
@@ -352,7 +363,7 @@ td.bot-td2::after{
                       design your slides according to your wishes</p>
                 </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="card">
                 <img src="images/icon-advantages-5.svg" alt="">
                  
@@ -424,11 +435,11 @@ td.bot-td2::after{
        </div>
   </div>     
    <div class="container-fluid background-dark">
-     <h1 id="look-slide">Your slides could look like this</h1>
+     <h1 class="adv2" id="look-slide">Your slides could look like this</h1>
      <templates-component></templates-component>
     </div>
     <div class="container">
-      <h1 style="text-align: center;">Why PitchGuru?</h1>
+      <h1 class="adv" style="text-align: center;">Why PitchGuru?</h1>
       <p style="text-align: center;font-size: 24px;">With PitchGuru you save time, money and stress with your presentations.</p>
       <div class="row advantages" id="ad2">
         <div class="col-lg-4">
@@ -438,7 +449,7 @@ td.bot-td2::after{
               </div>
               <div class="text-items">
                   <h1>
-                    Focus
+                     Focus on business
                   </h1>
                   <p>
                     Focus on your business instead of wasting your time or resources on presentations. Instead, let us do the work.</p>
@@ -497,9 +508,12 @@ td.bot-td2::after{
     }
     function moveAnother()
     {
-      
-        location.href = "order.html";
-
+       var price=parseInt(document.getElementById('amount').innerHTML);
+       var slide=parseInt(document.getElementById('slides').value);
+        var url = "order.html?"+price+"&"+slide;
+        console.log(url)
+        location.href=url
+         
     } 
     function moveAnotherTo()
     {

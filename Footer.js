@@ -25,7 +25,7 @@ class Footer extends HTMLElement {
             </div>
             <div class="row" style="height:70px"></div>
               <div class="row gy-4 gx-5 mt-3" style="margin-top:8%">
-                  <div class="col-lg-4 col-md-6">
+                  <div class="col-lg-4 col-md-12">
                   
                       <img usemap="#pitch-group-links" class="footer-img" src="images/logo-111.png" alt="logo"/>
                       <map name = "pitch-group-links">
@@ -40,7 +40,7 @@ class Footer extends HTMLElement {
                            href = "https://facebook.com" alt="linked-in"  />
                      </map>
                     </div>
-                  <div class="col-lg-2 col-md-6">
+                  <div class="col-lg-2 col-md-12">
                      <strong><h5 class="text-black mb-3">company </h5></strong> 
                       <ul class="list-unstyled text-muted">
                           <li><a href="about.html">about us</a></li>
@@ -50,7 +50,7 @@ class Footer extends HTMLElement {
                       </ul>
                   </div>
                   <div class="col-lg-1"></div>
-                  <div class="col-lg-2 col-md-6">
+                  <div class="col-lg-2 col-md-12">
                       <strong><h5 class="text-black mb-3">resources</h5></strong>
                       <ul class="list-unstyled text-muted">
                           <li><a href="resource1.html">white paper</a></li>
@@ -59,7 +59,7 @@ class Footer extends HTMLElement {
                       </ul>
                   </div>
                   <div class="col-lg-1"></div>
-                  <div class="col-lg-2 col-md-6">
+                  <div class="col-lg-2 col-md-12">
                     <strong><h5 class="text-black mb-3">Information</h5></strong>
                     <ul class="list-unstyled text-muted">
                         <li><a href="faq.html">Faq</a></li>
@@ -71,7 +71,7 @@ class Footer extends HTMLElement {
                 </div>
           </div>
           <hr style="height:1px;border:10px;color:#333;background-color:#333;" />
-          <div class="container copyrights">
+          <div class="container-fluid copyrights">
             <div class="row">
               <div class="col-lg-8">
                 <p>Copyright 2021 © PitchGuru</p>
