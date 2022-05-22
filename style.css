@@ -15,6 +15,7 @@ body,html
     height: fit-content;
     /* margin-bottom: -16%; */
 }
+
   .professional-head h1{
     font-size: 50px;
     padding:2%;
@@ -249,7 +250,15 @@ p#misson-text
 @media only screen and (max-width: 600px) {
   .card.indivi {
     margin-left: 13%;
-  }.content-text h1 {
+  }
+  img.payment-img {
+    width: inherit;
+}
+  h2#misson1 {
+    margin-top: 40%;
+    font-size: 20px;
+}
+  .content-text h1 {
     font-size: revert;
 }
 #pitch-deckstable tbody {
@@ -267,7 +276,7 @@ td {
 }
 .row.brief-row,.row.brief-color,.row.brief-link {
   
-  padding: initial;
+  
   padding-bottom: 4%;
 }
 #design .card {
@@ -315,10 +324,10 @@ p#deck-p {
   margin-left: -20%;
   font-size: 20px;
 }
-  #jumbo1{
-    margin-top: -10%;
-    margin-left: -5%;
-  }
+#jumbo1 {
+  margin-top: -15%;
+  margin-left: -5%;
+}
   #manager-text
   {
     text-align: left;
@@ -337,8 +346,11 @@ p#deck-p {
   div#custCarousel {
     width: inherit;
 }
+.container-fluid.talk-to-team {
+  margin-bottom: 15%;
+}
   #misson-button{
-    margin-left: -5%;
+    margin-left: 0%;
   }
   p#misson-text
   {
@@ -511,10 +523,8 @@ h1.happytext{
  margin-bottom: 3%;
  
 }
-  .payments img { 
-    width:100%;
-  }
-}
+  
+
 .background{
  padding: 5%;
   text-align: center;
@@ -575,6 +585,11 @@ h1.happytext{
     margin-left: 0%;
     margin-top: 3%;
 }
+.row.brief-row,.row.brief-color,.row.brief-link {
+  padding:initial;
+  
+  padding-bottom: 4%;
+}
 .pitch-head{
   font-size: 30px;
   text-align: center;
@@ -615,7 +630,20 @@ slider-container {
 {
   display: none;
 }
+.container.text-white.professional-head {
+  text-align: -webkit-left;
+}
+#home-jumbo {
+  margin-top: -28%;
+  margin-left: -10%;
+  text-align: left;
+}
 @media only screen and (min-width: 1200px) and (max-width){
+  div#resources {
+    margin-top: -4%;
+    padding-top: 5%;
+}
+
   /* td.colored.top-td::before{
     content: '';
       position: absolute;
@@ -733,6 +761,10 @@ td{
   #jumb-enter{
     margin-top: 25%;
   }
+  #home-jumbo {
+    
+    text-align: center;
+}
   #ad2 .card{
     margin-left: 35%;
     }
@@ -1981,6 +2013,9 @@ div#jumbo-resource{
   font-size: 20px;
   margin-top: 5%;
 }
+.content-text{
+  text-align: center;
+}
 .points-to{
   font-size: 20px;
   padding-top: 6%;
@@ -2269,7 +2304,7 @@ a.row-configure:hover {
 height: 500px;
 }
 #home-jumbo{
-  margin-top: -5%;
+  margin-top: -28%;
 }
 .btn-pinky{
   background-color: #fa5255;
@@ -2497,6 +2532,12 @@ img.navicon{
     .row.footer-heading h5{
       font-size: inherit;
   }
+  .payments img {
+    margin-left: 32%;
+    width: auto;
+    padding: 4%;
+    padding-bottom: 0%;
+}
   #design .card{
     margin-left: 0%;
   }
@@ -2633,8 +2674,42 @@ img#dwlnd1 {
 }
 /* air */
 @media only screen 
+ 
+  and (max-width: 1366px)  {
+#jumbo1 {
+  margin-top: -20%;
+  margin-left: -5%;
+}
+h2#misson1 {
+  margin-top: 40%;
+  font-size: 30px;
+}
+  }
+  #presentation-design-deck {
+   
+    padding: inherit;
+}
+div#design h3 {
+  text-align: start;
+}
+@media only screen 
   and (min-height: 1180px) 
   and (max-width: 820px)  {
+    .resource2 .order-button{
+      text-align: center;
+    }
+    .container.inquiry {
+      text-align: -webkit-center;
+  }
+    h1.convince-head {
+      text-align: -webkit-center;
+      font-size: 30px;
+      margin-top: 5%;
+  }
+  .row.order-button-block {
+    align-items: center;
+    text-align: -webkit-center;
+}
     .jumbo-text {
       /* background-color: rgba(0,0,0, 0.4); */
       color: white;
@@ -2676,7 +2751,7 @@ img#dwlnd1 {
 
     }
     #home-jumbo {
-      margin-top: -5%;
+      margin-top: -30%;
       text-align: center;
   }
   .card.mb-3.big-card{
@@ -2938,7 +3013,10 @@ h1.thous {
   margin-bottom: 5%;
 }
 @media only screen and (max-width: 600px) {
-  
+  #home-jumbo {
+    margin-top: -10%;
+    text-align: center;
+}
   div#faqq h4,div#faqq p {
     font-size: initial;
 }
@@ -3067,3 +3145,12 @@ img.footer-img {
     background-size: contain;
     background-position: bottom right;
   }
+  div#resources {
+    margin-top: -8%;
+    margin-bottom: -10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+  .row.order-button-block {
+    text-align: -webkit-center;
+}
