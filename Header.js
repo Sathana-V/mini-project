@@ -6,7 +6,7 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     
-      
+     
     <nav class="navbar navbar-expand-lg spl-p  fixed-top navbar-light bg-light">
     <div class="container-fluid">
       <img style="cursor:pointer;" onclick="moveHome()" src="images/logo-111.png" alt="" >
