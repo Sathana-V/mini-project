@@ -271,9 +271,7 @@ p#misson-text
    padding: 0% 0%; 
   margin-bottom: 14%;
 }
-td {
-  text-align: center;
-}
+
 .row.brief-row,.row.brief-color,.row.brief-link {
   
   
@@ -510,7 +508,7 @@ h1.happytext{
 }
 .col-lg-6.waiting h1{
   text-align: center;
-  font-size: 25px;
+  font-size:45px;
 }
   .presentation-image img{
     height: 50px;
@@ -1355,8 +1353,15 @@ div#enterpise_jumb
   {
       border-radius: 50%;
       width:50%;
-      height:40%;
+      height:50%;
   }
+  div#indexcard .card-title{
+    margin-left: -20%;
+  }
+div#indexcard .card-text{
+  margin-left: -20%;
+  margin-top:4%;
+}
   .card-buttons
   {
       float: left;
@@ -2300,8 +2305,8 @@ a.row-configure:hover {
  
   border-radius:10px;
 }
-#index-jumbo{
-height: 500px;
+#index-jumbo {
+  height: 600px;
 }
 #home-jumbo{
   margin-top: -28%;
@@ -2532,6 +2537,21 @@ img.navicon{
     .row.footer-heading h5{
       font-size: inherit;
   }
+  .presentation-cards .card {
+    /* width: 80px; */
+    margin: initial;
+    border-radius: 1rem;
+    height: 80px;
+    margin-left: -30%;
+    height: 100px;
+    text-align: center;
+    width: 100px;
+    padding-top: 4%;
+    padding-left: 2%;
+}
+div#text-2 .card {
+    margin-left: 0%;
+}
   .payments img {
     margin-left: 32%;
     width: auto;
@@ -3085,6 +3105,9 @@ img.footer-img {
   @media only screen 
   and (min-width: 1024px)  
   {
+    .row.about-container {
+      padding: 0% 10%;
+  }
     .row.whole-black {
       background-color: rgb(0,0,0);
       background-color: rgba(0, 52, 77, 0.4);
