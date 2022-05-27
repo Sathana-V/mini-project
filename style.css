@@ -251,6 +251,9 @@ p#misson-text
   .card.indivi {
     margin-left: 13%;
   }
+  .nav-right1 {
+    text-align: -webkit-center;
+}
   img.payment-img {
     width: inherit;
 }
@@ -332,7 +335,7 @@ p#deck-p {
     margin-left: -40%;
   }
   h2#misson1{
-    margin-top: 40%;
+    margin-top: 35%;
     font-size: 20px;
   }
   .flex-container {
@@ -2697,7 +2700,7 @@ img#dwlnd1 {
  
   and (max-width: 1366px)  {
 #jumbo1 {
-  margin-top: -20%;
+  margin-top: -35%;
   margin-left: -5%;
 }
 h2#misson1 {
@@ -3120,6 +3123,9 @@ img.footer-img {
   and (min-width: 810px) 
   and  (max-width: 830px) 
   {
+    button.navbutton {
+      width: 250px;
+  }
     .row.advantages .card{
       margin-left: 44%;
     }
@@ -3184,4 +3190,36 @@ img.footer-img {
     button.navbutton {
       margin-left: inherit;
   }
+  }
+
+  @media only screen 
+  and (min-width: 1366px) and (orientation:landscape) {
+
+    button.navbutton {
+      width: max-content;
+  }
+  }
+  button.navbutton {
+    width: max-content;
+    /* padding:1%; */
+}
+.container-fluid.example-images img {
+  margin-top: 2%;
+  width: -webkit-fill-available;
+}
+@media only screen 
+and  (max-width: 820px) 
+{
+  button.navbutton {
+    width: 250px;
+}
+}
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px)  {
+    .container-fluid.example-images img {
+      width: -webkit-fill-available;
+      margin-top: 2%;
+  }
+
   }

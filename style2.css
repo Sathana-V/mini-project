@@ -185,3 +185,12 @@ content: '';
   background-color:#fa5255;
 } */
 }
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px)  {
+    .container-fluid.example-images img {
+      width: -webkit-fill-available;
+      margin-top: 2%;
+  }
+
+  }
